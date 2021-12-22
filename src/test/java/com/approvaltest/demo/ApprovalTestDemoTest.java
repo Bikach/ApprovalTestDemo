@@ -28,8 +28,7 @@ public class ApprovalTestDemoTest {
 
     private String doUpdateQuality(String name, int sellIn, int quality) {
         var items = new Item[] {createItem(name, sellIn, quality)};
-        var gildedRose = new GildedRose(items);
-        gildedRose.updateQuality();
+        new GildedRose(items).updateQuality();
         return items[0].toString();
     }
 }

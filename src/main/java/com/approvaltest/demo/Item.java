@@ -26,7 +26,7 @@ public class Item {
 
     protected void updateQuality() {
         if (quality > 0) quality--;
-        sellIn = sellIn - 1;
+        sellIn--;
         if (sellIn < 0 && quality > 0) quality--;
     }
 
